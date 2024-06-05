@@ -9,7 +9,6 @@ body {
   align-items: center;
   position: absolute;
   width: 100%;
-  height: 9%;
   background-color: #ffffffe5;
   box-shadow: 2px 2px 5px;
   z-index: 1;
@@ -27,6 +26,8 @@ body {
 }
 
 .navbarcontainer > ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: flex;
   list-style: none;
 }
@@ -34,8 +35,7 @@ body {
 .navbarcontainer ul a li {
   border-right: 0.1rem solid #fbaf82;
   display: inline-block;
-  float: left;
-  padding: 0 15px;
+  padding: 1.5rem 15px;
 }
 .navbarcontainer ul a:last-child li {
   border-right: 0;
@@ -107,6 +107,40 @@ body {
   text-align: left;
   border-top: 1px solid;
 }
+.sobreDropdownContent {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 20%;
+  top: 100%;
+}
+.sobreDropdownContent > a {
+  padding-top: 1rem;
+  padding: 1rem 1rem;
+}
+.sobreDropdown:hover .sobreDropdownContent {
+  display: flex;
+}
+.ligasDropdownContent {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  left: 36%;
+  top: 100%;
+}
+.ligasDropdownContent > a {
+  padding-top: 1rem;
+  padding: 1rem 1rem;
+}
+.ligasDropdown:hover .ligasDropdownContent {
+  display: flex;
+}
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
@@ -127,7 +161,7 @@ body {
   width: auto;
   height: auto;
   z-index: 1;
-  top: 12%;
+  top: 13%;
 }
 
 @media (max-width: 500px) {
