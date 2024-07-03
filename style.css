@@ -8,15 +8,21 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
+  padding-top: 0.2rem;
   width: 100%;
   background-color: #ffffffe5;
   box-shadow: 2px 2px 5px;
   z-index: 1;
 }
 
-.navbarcontainer a:hover {
+.adomexLogo {
+  width: 10rem;
+}
+
+.navbarLink:hover {
   background-color: #f9dcc8;
 }
+
 .navbarcontainer span:hover {
   background-color: #f9dcc8;
 }
@@ -91,6 +97,41 @@ body {
   /* Important for vertical align on mobile phones */
 }
 
+.subDropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  display: inline;
+}
+
+.subDropbtn:hover {
+  background-color: #ddd;
+}
+
+.sobreOption {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 9.4rem;
+}
+
+.equiposOption {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 15rem;
+}
+
+.ligasOption {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 16.7rem;
+}
+
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
@@ -120,6 +161,15 @@ body {
   text-align: left;
   border-top: 1px solid;
 }
+.subDropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-top: 1px solid;
+}
 .sobreDropdownContent {
   display: none;
   position: absolute;
@@ -129,6 +179,9 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   left: 20%;
   top: 100%;
+}
+.subDropdown-content {
+  display: none;
 }
 .sobreDropdownContent > a {
   padding-top: 1rem;
@@ -179,14 +232,37 @@ body {
   background-color: #ddd;
 }
 
+.subDropdown-content a:hover {
+  background-color: darkred;
+}
+
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+.subDropdownContainer {
+  border-top: 1px solid;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.plusBtn {
+  display: inline;
+}
+
+.plusBtn:hover .subDropdown-content {
+  display: block;
+  background-color: #ddd;
+}
+
 .dropdownSubOption {
   text-decoration: none;
   color: black;
+}
+
+.dropdownSubOption:hover {
+  background-color: #f9dcc8;
 }
 
 .welcomecontainer {
@@ -487,6 +563,7 @@ path:hover {
   display: flex;
   flex-direction: column;
   max-width: 30rem;
+  width: 480px;
 }
 
 .descripcionTitulo {

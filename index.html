@@ -13,75 +13,134 @@
 
   <body>
     <div class="navbarcontainer">
+
+        <a href="index.html">
+          <img class="adomexLogo" src="images/adomexLogoEDIT.png" alt="Logo Adomex" href="index.html">
+        </a>
+
+        <!--Mobile Menu -->
+
       <div class="dropdown">
         <button class="dropbtn">
-          Menu
-          <i class="fa fa-caret-down"></i>
+          
+          <i class="fa fa-bars" style="font-size:2rem"></i>
         </button>
         <div class="dropdown-content">
-          <a href="index.html">Home</a>
-          <a href="equipos/index.html">Equipos</a>
-          <a href="#">Eventos</a>
-          <a href="fotossitio/index.html">Fotos</a>
-          <a href="#">Contacto</a>
-          <a href="#">Login</a>
+          <li><a  href="index.html">Home</a></li>
+
+          <div class="subDropdown">
+            <div class="subDropdownContainer">
+              <div class="subDropbtn sobreOption">
+                SOBRE LA ADOMEX
+              </div>
+                <div class="plusBtn"><i class="fa fa-plus-square" style="font-size:1.5rem"></i>
+                  <div class="subDropdown-content">
+                    <a  href="sobreAdomex/quienesSomos/index.html">Quienes Somos</a>
+                    <a  href="sobreAdomex/capacitaciones/index.html">Capacitaciones</a>
+                    <a  href="sobreAdomex/queEsElDodgeball/index.html">Que es el Dodgeball</a>
+                    <a  href="sobreAdomex/elDodgeballEnMexico/index.html">El Dodgeball en Mexico</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="subDropdown">
+            <div class="subDropdownContainer">
+              <div class="subDropbtn equiposOption">
+                EQUIPOS
+              </div>
+                <div class="plusBtn"><i class="fa fa-plus-square" style="font-size:1.5rem"></i>
+                  <div class="subDropdown-content">
+                    <a  href="equipos/encuentraEquipo/index.html">Encuentra tu Equipo</a>
+                    <a  href="equipos/equiposAfiliados/index.html">Equipos Afiliados</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+
+          <div class="subDropdown">
+            <div class="subDropdownContainer">
+              <div class="subDropbtn ligasOption">
+                LIGAS
+              </div>
+                <div class="plusBtn"><i class="fa fa-plus-square" style="font-size:1.5rem"></i>
+                  <div class="subDropdown-content">
+                    <a  href="ligas/ligaMexicanaDeDodgeball/index.html">Liga Mexicana de Dodgeball</a>
+                    <a  href="ligas/ligasRecreativas/index.html">Ligas Recreativas</a>
+                    <a  href="ligas/abreTuPropiaLiga/index.html">Abre tu Propia Liga</a>
+                    </div>
+                  </div>
+            </div>
+          </div>
+
+
+          <a  href="eventos/index.html">EVENTOS</a>
+          <a  href="fotossitio/index.html">FOTOS</a>
+          <a  href="equipos/index.html">TIENDA</a>
+          <a  href="https://dodgeball.shop/collections/all">CONTACTO</a>
         </div>
       </div>
 
+      <!-- Desktop Menu -->
 
       <ul>
 
         <span class="sobreDropdown navbarOption">
-          <a href="equipos/index.html">
-            <li class="sobrebtn">Sobre la ADOMEX</li></a>
+          <a href="sobreAdomex/index.html">
+            <li class="sobrebtn">SOBRE LA ADOMEX</li></a>
               <div class="sobreDropdownContent">
-                <a class="dropdownSubOption" href="index.html">
+                <a class="dropdownSubOption" href="sobreAdomex/quienesSomos/index.html">
                   Quienes somos
                 </a>
-                <a class="dropdownSubOption" href="equipos/index.html">
+                <a class="dropdownSubOption" href="sobreAdomex/capacitaciones/index.html">
                   Capacitaciones
                 </a>
-                <a class="dropdownSubOption" href="fotossitio/index.html">
+                <a class="dropdownSubOption" href="sobreAdomex/queEsElDodgeball/index.html">
                   Que es el Dodgeball
+                </a>
+                <a class="dropdownSubOption" href="sobreAdomex/elDodgeballEnMexico/index.html">
+                  El Dodgeball en Mexico
                 </a>
               </div>
             </span>
 
         <span class="equiposDropdown navbarOption">
           <a href="equipos/index.html">
-            <li>Equipos</li>
+            <li>EQUIPOS</li>
           </a>
             <div class="equiposDropdownContent">
               <a class="dropdownSubOption" href="equipos/encuentraEquipo/index.html">Encuentra tu equipo</a>
-              <a class="dropdownSubOption" href="equipos/index.html">Equipos Afiliados</a>
+              <a class="dropdownSubOption" href="equipos/equiposAfiliados/index.html">Equipos Afiliados</a>
             </div>
           </a>
         </span>
 
         <span class="ligasDropdown navbarOption">
-        <a href="equipos/index.html">
-          <li class="ligasbtn">Ligas</li></a>
+        <a href="ligas/index.html">
+          <li class="ligasbtn">LIGAS</li></a>
             <div class="ligasDropdownContent">
-              <a class="dropdownSubOption" href="index.html">Liga Mexicana de Dodgeball</a>
-              <a class="dropdownSubOption" href="equipos/index.html">Ligas recreativas</a>
-              <a class="dropdownSubOption" href="fotossitio/index.html">Abre tu propia liga</a>
+              <a class="dropdownSubOption" href="ligas/ligaMexicanaDeDodgeball/index.html">Liga Mexicana de Dodgeball</a>
+              <a class="dropdownSubOption" href="ligas/ligasRecreativas/index.html">Ligas recreativas</a>
+              <a class="dropdownSubOption" href="ligas/abreTuPropiaLiga/index.html">Abre tu propia liga</a>
             </div>
           </span>
 </a>
 
-        <a href="index.html">
+        <a class="navbarLink" href="eventos/index.html">
           <li>Eventos</li>
         </a>
 
-        <a href="fotossitio/index.html">
+        <a class="navbarLink" href="fotossitio/index.html">
           <li>Fotos</li>
         </a>
 
-        <a href="index.html">
+        <a class="navbarLink" href="https://dodgeball.shop/collections/all">
           <li>Tienda</li>
         </a>
 
-        <a href="index.html">
+        <a class="navbarLink" href="contacto/index.html">
           <li>Contacto</li>
         </a>
 
