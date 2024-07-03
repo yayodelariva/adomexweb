@@ -110,8 +110,9 @@ body {
   display: inline;
 }
 
-.subDropbtn:hover {
-  background-color: #ddd;
+.subMenuOption {
+  text-decoration: none;
+  color: black;
 }
 
 .sobreOption {
@@ -152,7 +153,7 @@ body {
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content .anchorOption {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -247,8 +248,16 @@ body {
   padding-bottom: 14px;
 }
 
+.subDropdownContainer:hover {
+  background-color: #ddd;
+}
+
 .plusBtn {
   display: inline;
+}
+
+.plusBtn:hover {
+  color: rgb(129, 129, 129);
 }
 
 .plusBtn:hover .subDropdown-content {
