@@ -583,3 +583,145 @@ path:hover {
 .descripcionInfo {
   font-size: 1.2rem;
 }
+
+/* Liga Mexicana de Dodgeball */
+
+.ligaMexicanaContentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTextContainer {
+  background-color: #5e5d5d;
+  background-image: url(../adomexweb/images/bg.jpg);
+  height: 32rem;
+}
+
+.matchBoardContainer {
+  background-color: #ddb8acb8;
+  height: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.matchBoardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.match {
+  height: 13rem;
+  width: 23rem;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.innerMatchColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logosAndScores {
+  display: flex;
+  align-items: center;
+}
+
+.teamLogo1 > img,
+.teamLogo2 > img {
+  height: 4rem;
+}
+.teamLogo1,
+.teamLogo2 {
+  height: fit-content;
+  width: fit-content;
+}
+
+.matchScore {
+  font-size: 2rem;
+}
+
+/* Events */
+
+.eventWrapper {
+  background: antiquewhite;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  grid-gap: 2rem;
+  justify-content: center;
+}
+
+.eventCard {
+  display: flex;
+  height: 13rem;
+  width: 23rem;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fffdef;
+}
+
+.dateWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.day {
+  border: solid 1px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: currentcolor;
+  border-top: none;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  min-width: 4.5rem;
+  max-width: 4.5rem;
+}
+
+.month {
+  border: solid 1px red;
+  background-color: red;
+  text-align: center;
+  font-size: 1.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.year {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventName {
+  font-size: 1.4rem;
+}
+
+.eventDuration {
+  font-size: 0.8rem;
+}
+
+.eventLocation {
+  font-size: 0.8rem;
+}
