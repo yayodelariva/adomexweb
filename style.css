@@ -1,4 +1,23 @@
+@import url("https://fonts.cdnfonts.com/css/museo");
+@font-face {
+  font-family: "Gilmer-Regular";
+  src: url(fonts/Gilmer-Regular.otf);
+}
+@font-face {
+  font-family: "Gilmer-Medium";
+  src: url(fonts/Gilmer-Medium.otf);
+}
+@font-face {
+  font-family: "Gilmer-Bold";
+  src: url(fonts/Gilmer-Bold.otf);
+}
+@font-face {
+  font-family: "Gilmer-Heavy";
+  src: url(fonts/Gilmer-Heavy.otf);
+}
+
 body {
+  font-family: Gilmer-Regular;
   margin: 0;
   background-color: white;
 }
@@ -8,6 +27,7 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
+  font-family: Museo;
   padding-top: 0.2rem;
   width: 100%;
   background-color: #ffffffe5;
@@ -41,7 +61,7 @@ body {
 .navbarOption > a {
   text-decoration: none;
   color: black;
-  font-weight: bolder;
+  font-weight: 800;
 }
 
 .navbarcontainer > ul {
@@ -63,7 +83,8 @@ body {
 .navbarcontainer > ul > a {
   text-decoration: none;
   color: black;
-  font-weight: bolder;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 
 @media (max-width: 500px) {
@@ -266,6 +287,7 @@ body {
 }
 
 .dropdownSubOption {
+  font-family: Gilmer-Regular;
   text-decoration: none;
   color: black;
 }

@@ -88,5 +88,5 @@ match4Logo1.appendChild(logoBJCloned1);
 match4Logo2.appendChild(logoBJCloned2);
 
 match5Score.innerHTML = "6-6";
-match5Logo1;
-match5Logo2;
+match5Logo1.appendChild(logoBJCloned3);
+match5Logo2.appendChild(logoLobosCloned3);
