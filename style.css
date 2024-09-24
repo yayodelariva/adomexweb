@@ -22,6 +22,49 @@ body {
   background-color: white;
 }
 
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+.contentWrapperNuestraHistoria {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contentWrapperLigaMexicana {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contentWrapperFotos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contentFotos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex: 1 0 auto;
+}
+
+.content {
+  background-color: antiquewhite;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  flex: 1 0 auto;
+}
+.contentEquipo {
+  height: 100%;
+}
+
 .navbarcontainer {
   display: flex;
   justify-content: center;
@@ -72,12 +115,8 @@ body {
 }
 
 .navbarcontainer ul a li {
-  border-right: 0.1rem solid #fbaf82;
   display: inline-block;
   padding: 1.5rem 15px;
-}
-.navbarcontainer ul a:last-child li {
-  border-right: 0;
 }
 
 .navbarcontainer > ul > a {
@@ -293,19 +332,41 @@ body {
 }
 
 .dropdownSubOption:hover {
-  background-color: #f9dcc8;
+  background-color: #b1a49a;
 }
 
 .welcomecontainer {
   position: absolute;
-  margin-left: 25%;
-  margin-right: 25%;
-  background: linear-gradient(to bottom, #2f85c53d 0%, #0345b3 100%);
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #ffffff94;
   border-radius: 10px;
   width: auto;
   height: auto;
   z-index: 1;
-  top: 13%;
+  top: 70%;
+}
+
+.welcomecontainerQuienesSomos {
+  margin-left: 25%;
+  margin-right: 25%;
+  background: linear-gradient(to bottom, #2f85c53d 0%, #0344b377 100%);
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  top: 15%;
+}
+
+.welcomecontainerLigaMexicana {
+  margin-left: 25%;
+  margin-right: 25%;
+  background: linear-gradient(to bottom, #2f85c53d 0%, #0344b377 100%);
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  top: 20%;
 }
 
 @media (max-width: 500px) {
@@ -325,6 +386,26 @@ body {
 .welcomecontainer > p {
   font-size: 135%;
   opacity: 1;
+  color: black;
+  text-shadow: 4px 1px 6px #5e5d5d;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.welcomecontainerQuienesSomos > p {
+  font-size: 135%;
+  opacity: 1;
+  color: azure;
+  text-shadow: 1px 1px 2px #5e5d5d;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.welcomecontainerLigaMexicana > p {
+  font-size: 135%;
+  opacity: 1;
   color: azure;
   text-shadow: 1px 1px 2px #5e5d5d;
   text-align: justify;
@@ -340,6 +421,8 @@ body {
 
 .landingpagebackground {
   width: 100%;
+  height: 100%;
+  flex: 1 0 auto;
 }
 
 .landingpagebackground > img {
@@ -350,6 +433,11 @@ body {
 
 .landingpagebackgroundfotos {
   width: 100%;
+  height: 100%;
+  background-image: url(../adomexweb/images/bgfotos.JPG);
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .landingpagebackgroundfotos > img {
@@ -374,10 +462,161 @@ body {
   }
 }
 
+/* FOOTER */
+
 footer {
-  background-color: brown;
+  background-color: #2b211e;
   width: 100%;
-  height: 8vh;
+  flex-shrink: 0;
+  font-family: sans-serif;
+}
+
+hr {
+  width: 80%;
+  color: beige;
+  background-color: beige;
+  border: none;
+  height: 0.04rem;
+}
+
+.mapaSitioWrapper {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapaYRedesContainer {
+  display: flex;
+  width: 80%;
+  padding-bottom: 3rem;
+}
+
+.mapaSitioContainer {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.mapaSitioContainer > h3 {
+  font-size: 1.1rem;
+  color: beige;
+  font-weight: bold;
+}
+
+.mapaSitio {
+  display: flex;
+  gap: 6rem;
+  font-size: 0.9rem;
+  color: rgb(206, 206, 188);
+  font-weight: bolder;
+}
+
+.mapaSitio > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mapaSitio > ul > li > a {
+  text-decoration: none;
+  color: beige;
+}
+
+.mapaSitio > ul > li > a:hover {
+  color: #db3932;
+}
+
+.redesSocialesWrapper {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-grow: 1;
+}
+
+.redesSocialesWrapper > ul {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  color: beige;
+}
+
+.facebookIcon {
+  text-decoration: none;
+  color: beige;
+}
+
+.facebookIcon:hover {
+  color: #db3932;
+}
+
+.instagramIcon {
+  text-decoration: none;
+  color: beige;
+}
+
+.instagramIcon:hover {
+  color: #db3932;
+}
+
+.whatsappIcon {
+  text-decoration: none;
+  color: beige;
+}
+
+.whatsappIcon:hover {
+  color: #db3932;
+}
+
+.logosWrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.logosWrapper > a > img {
+  max-width: 10vh;
+  height: auto;
+  padding-top: 4rem;
+  padding-bottom: 1.8rem;
+}
+
+.logoIztapalapa > img {
+  width: 7vh;
+}
+.logoUtopia > img {
+  width: 7vh;
+}
+.logoTlalpan {
+}
+.logoLhasa > img {
+  width: 4.5vh;
+}
+
+.avisoYCredits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  padding-bottom: 3rem;
+}
+
+.avisoPrivacidad {
+  font-size: 0.9rem;
+  color: beige;
+  text-decoration: none;
+}
+
+.avisoPrivacidad:hover {
+  color: #db3932;
+}
+
+.creditContainer {
+  font-size: 0.8rem;
+  color: grey;
+  text-decoration: none;
+}
+
+.creditContainer:hover {
+  color: #db3932;
 }
 
 /* EQUIPOS */
@@ -386,17 +625,18 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
-  margin-right: 80px;
-  margin-left: 80px;
-  padding-right: 80px;
-  padding-left: 80px;
   background: rgba(234, 221, 221, 0.5);
   border-radius: 10px;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
   width: auto;
   height: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
   z-index: 1;
   top: 12%;
+  background-image: url(../adomexweb/images/bgequipos.JPG);
+  background-size: cover;
 }
 
 @media (max-width: 500px) {
@@ -517,25 +757,40 @@ footer {
   font-size: 2rem;
 }
 
+/* LIGAS */
+
+.ligasWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ligasContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 5rem;
+}
+
 /* FOTOS */
 
 .fotostodas {
   display: flex;
-  position: absolute;
+
   z-index: 2;
-  gap: 40px;
-  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
   justify-content: center;
-  max-width: 1300px;
-  left: 23%;
 }
 
-.primeras3 {
-  top: 200px;
-}
-
-.segundas3 {
-  top: 685px;
+.gridFotos {
+  display: grid;
+  grid-template-columns: repeat(3, 0.23fr);
+  row-gap: 2rem;
+  justify-content: center;
 }
 
 @media (max-width: 500px) {
@@ -563,15 +818,21 @@ footer {
   box-shadow: 2px 4px 10px;
 }
 
+iframe {
+  height: 26rem;
+  width: 18rem;
+  border-radius: 18px;
+}
+
 /* MAP STUFF */
 
 path {
-  fill: rgb(82, 122, 148);
+  fill: rgb(65, 65, 65);
 }
 
 path:hover {
-  fill: purple;
-  stroke: red;
+  fill: rgb(233, 233, 233);
+  stroke: #db3932;
   stroke-width: 3px;
   transition: fill 0.4s;
 }
@@ -579,9 +840,6 @@ path:hover {
 .mapaYDescripcionContainer {
   display: flex;
   justify-content: center;
-  padding-top: 10rem;
-  padding-left: 8rem;
-  padding-right: 8rem;
   gap: 5rem;
 }
 
@@ -614,9 +872,8 @@ path:hover {
 }
 
 .mainTextContainer {
-  background-color: #5e5d5d;
-  background-image: url(../adomexweb/images/bg.jpg);
-  height: 32rem;
+  height: 100%;
+  padding-bottom: 4rem;
 }
 
 .matchBoardContainer {
@@ -674,6 +931,7 @@ path:hover {
   background: antiquewhite;
   padding-top: 8rem;
   padding-bottom: 4rem;
+  height: 100vh;
 }
 
 .eventGrid {
@@ -746,4 +1004,31 @@ path:hover {
 
 .eventLocation {
   font-size: 0.8rem;
+}
+
+/*SOBRE ADOMEX*/
+
+/* QUIENES SOMOS */
+.miembrosWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.miembrosGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  grid-column-gap: 7rem;
+  grid-row-gap: 2rem;
+}
+
+.miembro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.miembroFoto > img {
+  height: 10rem;
 }
