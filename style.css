@@ -60,6 +60,38 @@ body {
   padding-top: 8rem;
   padding-bottom: 8rem;
   flex: 1 0 auto;
+  /* background-image: url(images/adomex-cuadradoSINTEXTO.png);
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position-x: center;
+  background-position-y: center; */
+}
+.contentElDodgeballEnMexico {
+  background-color: antiquewhite;
+  height: 100%;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  flex: 1 0 auto;
+  background-image: url(images/adomex-cuadradoSINTEXTO.png);
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position-x: center;
+  background-position-y: center;
+}
+.contentQueEsElDodgeball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  background-color: antiquewhite;
+  height: 100%;
+  padding-top: 8rem;
+  flex: 1 0 auto;
+  /* background-image: url(images/adomex-cuadradoSINTEXTO.png);
+  background-repeat: no-repeat;
+  background-size: 78%;
+  background-position-x: center;
+  background-position-y: center; */
 }
 .contentEquipo {
   height: 100%;
@@ -350,12 +382,22 @@ body {
 .welcomecontainerQuienesSomos {
   margin-left: 25%;
   margin-right: 25%;
-  background: linear-gradient(to bottom, #2f85c53d 0%, #0344b377 100%);
+  background-color: #ffffff94;
   border-radius: 10px;
   width: auto;
   height: auto;
   z-index: 1;
   top: 15%;
+}
+
+.welcomecontainerQueEsElDodgeball {
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #ffffff94;
+  border-radius: 10px;
+  width: 60rem;
+  height: auto;
+  z-index: 1;
 }
 
 .welcomecontainerLigaMexicana {
@@ -396,11 +438,26 @@ body {
 .welcomecontainerQuienesSomos > p {
   font-size: 135%;
   opacity: 1;
-  color: azure;
-  text-shadow: 1px 1px 2px #5e5d5d;
+  color: black;
+  text-shadow: 1px 1px 6px #5e5d5d;
   text-align: justify;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.welcomecontainerQueEsElDodgeball > p {
+  font-size: 135%;
+  opacity: 1;
+  color: black;
+  text-shadow: 4px 1px 6px #5e5d5d;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.youtubeVOD {
+  width: 60rem;
+  height: 33.75rem;
 }
 
 .welcomecontainerLigaMexicana > p {
@@ -538,6 +595,15 @@ hr {
   gap: 2rem;
   list-style-type: none;
   color: beige;
+}
+
+.locationIcon {
+  text-decoration: none;
+  color: beige;
+}
+
+.locationIcon:hover {
+  color: #db3932;
 }
 
 .facebookIcon {
@@ -830,6 +896,58 @@ path {
   fill: rgb(65, 65, 65);
 }
 
+.alcaldiaHoverText {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #ccc;
+  display: none; /* Initially hidden */
+}
+
+#benitoJuarez {
+  fill: rgb(56, 123, 59);
+}
+
+#benitoJuarez:hover {
+  fill: rgb(212, 236, 128);
+  stroke: #db3932;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
+
+#tlalpan {
+  fill: rgb(56, 123, 59);
+}
+
+.hrSeparator {
+  background-color: black;
+  height: 0.12rem;
+  width: auto;
+}
+
+#tlalpan:hover {
+  fill: rgb(212, 236, 128);
+  stroke: #db3932;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
+
+#iztapalapa {
+  fill: rgb(56, 123, 59);
+}
+
+#iztapalapa:hover {
+  fill: rgb(212, 236, 128);
+  stroke: #db3932;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
+
 path:hover {
   fill: rgb(233, 233, 233);
   stroke: #db3932;
@@ -851,17 +969,109 @@ path:hover {
 .alcaldiaDescripcion {
   display: flex;
   flex-direction: column;
+  gap: 3rem;
   max-width: 30rem;
   width: 480px;
 }
 
-.descripcionTitulo {
+.alcaldiaTitulo {
   font-size: 1.6rem;
   text-align: center;
+  font-weight: bolder;
 }
 
-.descripcionInfo {
-  font-size: 1.2rem;
+.ubicacionTitulo {
+  text-align: justify;
+  white-space: pre-line;
+}
+
+.costosTitulo {
+  white-space: pre-line;
+}
+
+.ubicacionInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ubicacionYLogoContainer {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.ubicacionInfo {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+.locationIconInfo {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+
+.locationIconInfo:hover {
+  color: red;
+}
+
+.ubicacionInfoExtra {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+.horariosTitulo {
+  text-align: justify;
+}
+
+.horariosInfo {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+.costosInfo {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+.coachContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coachInfoYLogo {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.whatsappIconInfo {
+  color: black;
+  list-style-type: none;
+}
+
+.whatsappIconInfo:hover {
+  color: green;
+}
+
+.coachInfo {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
+.contactoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.contactoWrapper > ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.contactoWrapper > ul > a > li {
+  color: rgb(65, 65, 65);
 }
 
 /* Liga Mexicana de Dodgeball */
@@ -992,6 +1202,7 @@ path:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1.5rem;
 }
 
 .eventName {
