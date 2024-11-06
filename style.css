@@ -56,7 +56,7 @@ body {
 
 .content {
   background-color: antiquewhite;
-  padding-top: 8rem;
+  padding-top: 12rem;
   padding-bottom: 8rem;
   flex: 1 0 auto;
   /* background-image: url(images/adomex-cuadradoSINTEXTO.png);
@@ -586,7 +586,7 @@ body {
 }
 
 .landingpagebackgroundfotos {
-  background-image: url(../adomexweb/images/bgfotos.JPG);
+  background-image: url(images/bgfotos.jpg);
   background-size: cover;
   width: auto;
   padding-bottom: 8rem;
@@ -819,7 +819,7 @@ hr {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  padding-top: 5rem;
+  padding-top: 12rem;
   padding-bottom: 8rem;
   width: auto;
   height: auto;
@@ -827,7 +827,7 @@ hr {
   padding-right: 3rem;
   z-index: 1;
   top: 12%;
-  background-image: url(../adomexweb/images/bgequipos.JPG);
+  background-image: url(images/bgequipos.jpg);
   background-size: cover;
 }
 
