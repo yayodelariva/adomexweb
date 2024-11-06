@@ -56,7 +56,6 @@ body {
 
 .content {
   background-color: antiquewhite;
-  height: 100%;
   padding-top: 8rem;
   padding-bottom: 8rem;
   flex: 1 0 auto;
@@ -93,8 +92,26 @@ body {
   background-position-x: center;
   background-position-y: center; */
 }
+
+@media (max-width: 500px) {
+  .contentQueEsElDodgeball {
+    height: auto;
+    padding-bottom: 1rem;
+    gap: 3.5rem;
+  }
+}
 .contentEquipo {
   height: 100%;
+}
+
+.contentEventos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  flex: 1 0 auto;
 }
 
 .navbarcontainer {
@@ -108,6 +125,7 @@ body {
   background-color: #ffffffe5;
   box-shadow: 2px 2px 5px;
   z-index: 1;
+  min-height: 69px;
 }
 
 .adomexLogo {
@@ -126,10 +144,11 @@ body {
   .navbarcontainer {
     position: absolute;
     width: 100%;
-    height: 5%;
-    background-color: brown;
+    height: 10%;
+    background-color: #ffffffe5;
     box-shadow: 2px 2px 5px;
     z-index: 3;
+    gap: 3rem;
   }
 }
 
@@ -175,12 +194,14 @@ body {
     overflow: hidden;
   }
 }
-
+.dropbtn {
+  height: 98px;
+}
 .dropdown .dropbtn {
   font-size: 16px;
   border: none;
   outline: none;
-  color: white;
+  color: #db3932;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -226,10 +247,6 @@ body {
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: red;
-}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -325,10 +342,6 @@ body {
   background-color: #ddd;
 }
 
-.subDropdown-content a:hover {
-  background-color: darkred;
-}
-
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
@@ -348,10 +361,6 @@ body {
   display: inline;
 }
 
-.plusBtn:hover {
-  color: rgb(129, 129, 129);
-}
-
 .plusBtn:hover .subDropdown-content {
   display: block;
   background-color: #ddd;
@@ -361,6 +370,11 @@ body {
   font-family: Gilmer-Regular;
   text-decoration: none;
   color: black;
+}
+
+.fa.fa-plus-square {
+  color: #db3932;
+  font-size: 2.3rem;
 }
 
 .dropdownSubOption:hover {
@@ -379,6 +393,12 @@ body {
   top: 70%;
 }
 
+@media (max-width: 500px) {
+  .welcomecontainer {
+    top: 25%;
+  }
+}
+
 .welcomecontainerQuienesSomos {
   margin-left: 25%;
   margin-right: 25%;
@@ -388,27 +408,71 @@ body {
   height: auto;
   z-index: 1;
   top: 15%;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+}
+
+@media (max-width: 500px) {
+  .welcomecontainerQuienesSomos {
+    background-color: #ffffff94;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    margin: 0;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    top: 15%;
+  }
 }
 
 .welcomecontainerQueEsElDodgeball {
-  margin-left: 15%;
-  margin-right: 15%;
   background-color: #ffffff94;
   border-radius: 10px;
-  width: 60rem;
+  max-width: 60rem;
   height: auto;
   z-index: 1;
 }
 
+@media (max-width: 500px) {
+  .welcomecontainerQueEsElDodgeball {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 .welcomecontainerLigaMexicana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-left: 25%;
   margin-right: 25%;
-  background: linear-gradient(to bottom, #2f85c53d 0%, #0344b377 100%);
+
   border-radius: 10px;
   width: auto;
   height: auto;
   z-index: 1;
   top: 20%;
+}
+
+@media (max-width: 500px) {
+  .welcomecontainerLigaMexicana {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.logoAdomexCuadrado {
+  width: 14rem;
+}
+
+.welcomecontainerCapacitaciones {
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #ffffff94;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  z-index: 1;
 }
 
 @media (max-width: 500px) {
@@ -426,7 +490,7 @@ body {
 }
 
 .welcomecontainer > p {
-  font-size: 135%;
+  font-size: 1.3rem;
   opacity: 1;
   color: black;
   text-shadow: 4px 1px 6px #5e5d5d;
@@ -435,8 +499,14 @@ body {
   padding-right: 2rem;
 }
 
+@media (max-width: 500px) {
+  .welcomecontainer > p {
+    font-size: 0.9rem;
+  }
+}
+
 .welcomecontainerQuienesSomos > p {
-  font-size: 135%;
+  font-size: 1.3rem;
   opacity: 1;
   color: black;
   text-shadow: 1px 1px 6px #5e5d5d;
@@ -445,8 +515,30 @@ body {
   padding-right: 2rem;
 }
 
+@media (max-width: 500px) {
+  .welcomecontainerQuienesSomos > p {
+    font-size: 0.9rem;
+  }
+}
+
 .welcomecontainerQueEsElDodgeball > p {
-  font-size: 135%;
+  font-size: 1.3rem;
+  opacity: 1;
+  color: black;
+  text-shadow: 4px 1px 6px #5e5d5d;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 500px) {
+  .welcomecontainerQueEsElDodgeball > p {
+    font-size: 0.9rem;
+  }
+}
+
+.welcomecontainerCapacitaciones > p {
+  font-size: 1.3rem;
   opacity: 1;
   color: black;
   text-shadow: 4px 1px 6px #5e5d5d;
@@ -456,24 +548,29 @@ body {
 }
 
 .youtubeVOD {
+  /* max-width: 60rem;
   width: 60rem;
-  height: 33.75rem;
-}
-
-.welcomecontainerLigaMexicana > p {
-  font-size: 135%;
-  opacity: 1;
-  color: azure;
-  text-shadow: 1px 1px 2px #5e5d5d;
-  text-align: justify;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  height: 33.75rem; */
+  width: 50vw;
+  height: 55vh;
 }
 
 @media (max-width: 500px) {
-  .welcomecontainer > p {
-    font-size: 5vw;
+  .youtubeVOD {
+    width: 21rem;
+    height: 11.8rem;
+    padding-bottom: 3.5rem;
   }
+}
+
+.welcomecontainerLigaMexicana > p {
+  font-size: 1.3rem;
+  opacity: 1;
+  color: black;
+  text-shadow: 4px 1px 6px #5e5d5d;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .landingpagebackground {
@@ -489,27 +586,10 @@ body {
 }
 
 .landingpagebackgroundfotos {
-  width: 100%;
-  height: 100%;
   background-image: url(../adomexweb/images/bgfotos.JPG);
   background-size: cover;
-  padding-top: 8rem;
+  width: auto;
   padding-bottom: 8rem;
-}
-
-.landingpagebackgroundfotos > img {
-  filter: grayscale(25%);
-  height: 137vh;
-  width: inherit;
-}
-
-@media (max-width: 500px) {
-  .landingpagebackgroundfotos > img {
-    filter: grayscale(25%);
-    height: 230vh;
-    width: inherit;
-    object-fit: cover;
-  }
 }
 
 @media (max-width: 500px) {
@@ -549,6 +629,16 @@ hr {
   padding-bottom: 3rem;
 }
 
+@media (max-width: 500px) {
+  .mapaYRedesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: auto;
+    padding-bottom: 0;
+  }
+}
+
 .mapaSitioContainer {
   display: flex;
   flex-direction: column;
@@ -567,6 +657,17 @@ hr {
   font-size: 0.9rem;
   color: rgb(206, 206, 188);
   font-weight: bolder;
+}
+
+@media (max-width: 500px) {
+  .mapaSitio {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: rgb(206, 206, 188);
+    font-weight: bolder;
+  }
 }
 
 .mapaSitio > ul {
@@ -638,11 +739,37 @@ hr {
   align-items: center;
   gap: 2rem;
 }
+
+@media (max-width: 500px) {
+  .logosWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    height: 315px;
+    width: 320px;
+  }
+}
+
 .logosWrapper > a > img {
   max-width: 10vh;
   height: auto;
   padding-top: 4rem;
   padding-bottom: 1.8rem;
+}
+
+@media (max-width: 500px) {
+  .logosWrapper > a > img {
+    width: 100%;
+    max-width: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .logoIztapalapa > img {
@@ -651,8 +778,8 @@ hr {
 .logoUtopia > img {
   width: 7vh;
 }
-.logoTlalpan {
-}
+/* .logoTlalpan {
+} */
 .logoLhasa > img {
   width: 4.5vh;
 }
@@ -691,9 +818,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(234, 221, 221, 0.5);
   border-radius: 10px;
-  padding-top: 8rem;
+  padding-top: 5rem;
   padding-bottom: 8rem;
   width: auto;
   height: auto;
@@ -710,13 +836,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    margin-right: 4vw;
-    margin-left: 4vw;
-    padding-right: 2vw;
-    padding-left: 4vw;
-    background: rgba(234, 221, 221, 0.5);
-    border-radius: 10px;
+    border-radius: 0;
     width: auto;
     height: auto;
     z-index: 1;
@@ -728,6 +848,8 @@ hr {
   text-align: center;
   padding-bottom: 13px;
   font-size: 3vw;
+  color: antiquewhite;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 500px) {
@@ -740,15 +862,17 @@ hr {
 
 .equiposgrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 45px;
+  width: 500px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
 }
 
 @media (max-width: 500px) {
   .equiposgrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 0%;
+    grid-gap: 2.5rem;
+    width: auto;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -760,8 +884,6 @@ hr {
 
 @media (max-width: 500px) {
   .equipo {
-    max-width: 58%;
-    position: relative;
     transition: 0.4s ease-out;
     text-align: center;
     font-size: 2vw;
@@ -808,12 +930,6 @@ hr {
   width: 100%;
 }
 
-@media (max-width: 500px) {
-  .equipo > img {
-    width: 158%;
-  }
-}
-
 .equiponame {
   display: flex;
   flex-direction: column;
@@ -830,7 +946,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  gap: 0.5rem;
 }
 
 .ligasContainer {
@@ -839,6 +955,49 @@ hr {
   align-items: center;
   height: 100%;
   gap: 5rem;
+}
+
+@media (max-width: 500px) {
+  .ligasContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 5rem;
+  }
+}
+
+.ligaMexicanaDeDodgeball {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ligasRecreativas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.abreTuLiga {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+.imgLigas {
+  width: 13rem;
+}
+
+.imgLigaMex {
+  width: 16rem;
 }
 
 /* FOTOS */
@@ -857,6 +1016,13 @@ hr {
   grid-template-columns: repeat(3, 0.23fr);
   row-gap: 2rem;
   justify-content: center;
+  padding-top: 11rem;
+}
+
+@media (max-width: 500px) {
+  .gridFotos {
+    grid-template-columns: repeat(1, 0.23fr);
+  }
 }
 
 @media (max-width: 500px) {
@@ -884,7 +1050,7 @@ hr {
   box-shadow: 2px 4px 10px;
 }
 
-iframe {
+.gridFotos > iframe {
   height: 26rem;
   width: 18rem;
   border-radius: 18px;
@@ -961,9 +1127,25 @@ path:hover {
   gap: 5rem;
 }
 
+@media (max-width: 500px) {
+  .mapaYDescripcionContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 5rem;
+  }
+}
+
 .mapaAlcaldia {
   height: auto;
   width: 30%;
+  min-width: 500px;
+}
+
+@media (max-width: 500px) {
+  .mapaAlcaldia {
+    display: none;
+  }
 }
 
 .alcaldiaDescripcion {
@@ -974,10 +1156,116 @@ path:hover {
   width: 480px;
 }
 
+@media (max-width: 500px) {
+  .alcaldiaDescripcion {
+    width: auto;
+    max-width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .alcaldiaDescripcion > .infoWrapper > .ubicacionWrapper > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.alcaldiaDescripcion
+    > div.infoWrapper
+    > div.ubicacionWrapper
+    > div.ubicacionInfoContainer
+    > div.ubicacionYLogoContainer
+    > div.ubicacionInfo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.alcaldiaDescripcion
+    > div.infoWrapper
+    > div.ubicacionWrapper
+    > div.ubicacionInfoContainer
+    > div.ubicacionInfoExtra {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .alcaldiaDescripcion > .infoWrapper > .horariosWrapper > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.alcaldiaDescripcion
+    > div.infoWrapper
+    > div.horariosWrapper
+    > div.horariosInfo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .alcaldiaDescripcion > .infoWrapper > .costosWrapper > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.alcaldiaDescripcion
+    > div.infoWrapper
+    > div.costosWrapper
+    > div.costosInfo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .alcaldiaDescripcion > .infoWrapper > .coachWrapper > h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.alcaldiaDescripcion
+    > div.infoWrapper
+    > div.coachWrapper
+    > div.coachContainer
+    > div.coachInfoYLogo
+    > div.coachInfo {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  div.alcaldiaDescripcion
+    > div.infoWrapper
+    > div.coachWrapper
+    > div.coachContainer
+    > div.coachInfoYLogo
+    > div.coachInfoExtra {
+    font-size: 0.9rem;
+  }
+}
+
 .alcaldiaTitulo {
   font-size: 1.6rem;
   text-align: center;
   font-weight: bolder;
+}
+
+.alcaldiasFormTop {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .alcaldiasFormTop {
+    display: block;
+  }
+}
+
+.alcaldiasForm {
+  text-align: center;
 }
 
 .ubicacionTitulo {
@@ -994,6 +1282,12 @@ path:hover {
   flex-direction: column;
   gap: 1rem;
 }
+
+/* @media (max-width: 500px) {
+  .ubicacionInfoContainer {
+    display: none;
+  }
+} */
 
 .ubicacionYLogoContainer {
   display: flex;
@@ -1018,6 +1312,16 @@ path:hover {
 .ubicacionInfoExtra {
   font-size: 1rem;
   white-space: pre-line;
+}
+
+.alcaldiasMenuContainer {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .alcaldiasMenuContainer {
+    display: block;
+  }
 }
 
 .horariosTitulo {
@@ -1101,6 +1405,16 @@ path:hover {
   align-items: center;
 }
 
+@media (max-width: 500px) {
+  .matchBoardGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .match {
   height: 13rem;
   width: 23rem;
@@ -1144,11 +1458,26 @@ path:hover {
   height: 100vh;
 }
 
+@media (max-width: 500px) {
+  .eventWrapper {
+    padding-top: 3rem;
+  }
+}
+
 .eventGrid {
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   grid-gap: 2rem;
   justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .eventGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
+    grid-gap: 2rem;
+    justify-content: center;
+  }
 }
 
 .eventCard {
@@ -1205,6 +1534,14 @@ path:hover {
   gap: 1.5rem;
 }
 
+@media (max-width: 500px) {
+  .infoWrapper {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+    max-width: 380px;
+  }
+}
+
 .eventName {
   font-size: 1.4rem;
 }
@@ -1234,6 +1571,13 @@ path:hover {
   grid-row-gap: 2rem;
 }
 
+@media (max-width: 500px) {
+  .miembrosGrid {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+  }
+}
+
 .miembro {
   display: flex;
   flex-direction: column;
@@ -1242,4 +1586,14 @@ path:hover {
 
 .miembroFoto > img {
   height: 10rem;
+}
+
+/* SHOW AND HIDE CLASSES */
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }

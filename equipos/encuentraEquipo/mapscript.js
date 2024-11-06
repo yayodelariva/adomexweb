@@ -16,6 +16,21 @@ const tlalpan = document.querySelector(".tlalpan");
 const milpaAlta = document.querySelector("#path3249");
 const alcaldias = document.querySelectorAll("path");
 const mapaAlcaldia = document.querySelector(".mapaAlcaldia");
+const alcaldiaMenu = document.querySelector("#alcaldiaMenu");
+const alcaldiasMenuContainer = document.querySelector(
+  ".alcaldiasMenuContainer"
+);
+const alcaldiasFormTop = document.querySelector(".alcaldiasFormTop");
+const alcaldiasForm = document.querySelector(".alcaldiasForm");
+const ubicacionInfoExtra2ID = document.querySelector("#ubicacionInfoExtra2");
+const ubicacionInfoExtra3ID = document.querySelector("#ubicacionInfoExtra3");
+const ubicacionYLogoContainerID = document.querySelector(
+  "#ubicacionYLogoContainer"
+);
+const alcaldiasMenuContainerID = document.querySelector(
+  "#alcaldiasMenuContainer"
+);
+
 let alcaldiaDescripcion = document.querySelector(".alcaldiaDescripcion");
 let descripcionTitulo = document.querySelector(".alcaldiaTitulo");
 let ubicacionTitulo = document.querySelector(".ubicacionTitulo");
@@ -44,6 +59,27 @@ let whatsappIconInfo = document.querySelector(".whatsappIconInfo");
 let whatsappIconInfo2 = document.querySelector(".whatsappIconInfo2");
 let whatsappIcon = document.querySelector(".whatsappIcon");
 let whatsappIcon2 = document.querySelector(".whatsappLogo2");
+
+const alvaroObregonContent = document.querySelector("#alvaroObregonContent");
+const azcapotzalcoContent = document.querySelector("#azcapotzalcoContent");
+const benitoJuarezContent = document.querySelector("#benitoJuarezContent");
+const coyoacanContent = document.querySelector("#coyoacanContent");
+const cuajimalpaContent = document.querySelector("#cuajimalpaContent");
+const cuauhtemocContent = document.querySelector("#cuauhtemocContent");
+const gustavoAMaderoContent = document.querySelector("#gustavoAMaderoContent");
+const iztacalcoContent = document.querySelector("#iztacalcoContent");
+const iztapalapaContent = document.querySelector("#iztapalapaContent");
+const magdalenaContrerasContent = document.querySelector(
+  "#magdalenaContrerasContent"
+);
+const miguelHidalgoContent = document.querySelector("#miguelHidalgoContent");
+const milpaAltaContent = document.querySelector("#milpaAltaContent");
+const tlahuacContent = document.querySelector("#tlahuacContent");
+const tlalpanContent = document.querySelector("#tlalpanContent");
+const venustianoCarranzaContent = document.querySelector(
+  "#venustianoCarranzaContent"
+);
+const xochimilcoContent = document.querySelector("#xochimilcoContent");
 
 // let logoWrapper = document.querySelector(".logoWrapper");
 // let adomexLogo = document.createElement("img");
@@ -406,4 +442,218 @@ function showCostosWrapper() {
 }
 function showContactoWrapper() {
   contactoWrapper.style.display = "flex";
+}
+
+function showAlcaldia() {
+  this.classList.toggle("show");
+}
+
+function hideAlcaldia() {
+  this.classList.toggle("hide");
+}
+
+// EVERYTHING RELATED TO MOBILE ALCALDIA MENU BELOW
+
+alcaldiaMenu.addEventListener("change", handleAlcaldiaSelection);
+
+function handleAlcaldiaSelection() {
+  clearContents();
+  alcaldiasMenuContainer.prepend(alcaldiasForm);
+  alcaldiasFormTop.append(alcaldiasForm);
+  ubicacionInfoExtra2ID.classList.add("hide");
+  ubicacionInfoExtra3ID.classList.add("hide");
+  ubicacionYLogoContainerID.classList.add("hide");
+  alcaldiasMenuContainerID.classList.add("hide");
+
+  switch (alcaldiaMenu.value) {
+    case "alvaroObregon":
+      currentAlcaldia = "Alvaro Obregón"; ///changes descripcionTitulo textContent
+      handleEmptyAlcaldia();
+      break;
+
+    case "azcapotzalco":
+      currentAlcaldia = "Azcapotzalco";
+      handleEmptyAlcaldia();
+      break;
+
+    case "benitoJuarez":
+      coachWrapper.style.display = "block";
+      costosWrapper.style.display = "block";
+      descripcionTitulo.textContent = "Benito Juarez";
+      descripcionInfo.textContent = "Gimnasio Eduardo Gorraez";
+      descripcionInfo2.textContent =
+        "Gral. Anaya, Benito Juárez, 03340 Ciudad de México, CDMX";
+      descripcionInfo3.textContent = "";
+      descripcionInfo4.textContent = "";
+      locationIcon1.style.display = "block";
+      locationIcon2.style.display = "none";
+      locationIconInfo.setAttribute(
+        "href",
+        "https://maps.app.goo.gl/BYMmb5JcQtckgd3A8"
+      );
+      horariosInfo.textContent =
+        "Lunes y miércoles de 21:00 a 23:00 - Femenil\n\nMartes y jueves de 21:00 a 23:00 - Varonil\n\nViernes de 21:00 a 23:00 - Mixto\n\nSábados de 08:00 a 10:00 Infantil/Cloth Mixto/Foam Varonil, Femenil y Mixto";
+      costosInfo.textContent =
+        "$300 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
+      coachInfo.textContent = "Rogelio Morales: Foam Femenil, Foam Infantil";
+      coachInfo2.textContent = "Luis de la Riva: Foam Varonil";
+      whatsappIcon2.style.display = "block";
+      whatsappIconInfo.setAttribute(
+        "href",
+        "https://wa.me/525569690158?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
+      );
+      whatsappIconInfo2.setAttribute(
+        "href",
+        "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
+      );
+      showCoachWrapper();
+      showContactoWrapper();
+      hideContactoWrapper();
+      // Code for benitoJuarez
+      break;
+
+    case "coyoacan":
+      currentAlcaldia = "Coyoacán";
+      handleEmptyAlcaldia();
+      break;
+
+    case "cuajimalpa":
+      currentAlcaldia = "Cuajimalpa";
+      handleEmptyAlcaldia();
+      break;
+
+    case "cuauhtemoc":
+      currentAlcaldia = "Cuauhtémoc";
+      handleEmptyAlcaldia();
+      break;
+
+    case "gustavoAMadero":
+      currentAlcaldia = "Gustavo A. Madero";
+      handleEmptyAlcaldia();
+      break;
+
+    case "iztacalco":
+      currentAlcaldia = "Iztacalco";
+      handleEmptyAlcaldia();
+      break;
+
+    case "iztapalapa":
+      console.log("Iztapalapa");
+      showCostosWrapper();
+      showCoachWrapper();
+      hideContactoWrapper();
+      descripcionTitulo.textContent = "Iztapalapa";
+      descripcionInfo.textContent = "Utopía Ixtapalcalli";
+      descripcionInfo2.textContent =
+        "Ayuntamiento 133, San Pedro Iztapalapa, CDMX";
+      descripcionInfo3.textContent = "";
+      descripcionInfo4.textContent = "";
+      locationIcon1.style.display = "block";
+      locationIcon2.style.display = "none";
+      locationIconInfo.setAttribute(
+        "href",
+        "https://maps.app.goo.gl/YM4X1zYgsXxyM1cA9"
+      );
+      horariosInfo.textContent =
+        "Miércoles y Viernes de 15:30 a 17:30 - Foam mixto todas las edades\n\nSábados de 09:00 a 11:30 - Foam mixto todas las edades";
+      costosInfo.textContent = "GRATIS";
+      coachInfo.textContent = "Carlos “Pato” de la Riva: 5534449982";
+      coachInfo2.textContent = "";
+      whatsappIcon2.style.display = "none";
+      whatsappIconInfo.setAttribute(
+        "href",
+        "https://wa.me/525534449982?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Iztapalapa"
+      );
+      break;
+
+    case "magdalenaContreras":
+      currentAlcaldia = "Magdalena Contreras";
+      handleEmptyAlcaldia();
+      break;
+
+    case "miguelHidalgo":
+      currentAlcaldia = "Miguel Hidalgo";
+      handleEmptyAlcaldia();
+      break;
+
+    case "milpaAlta":
+      currentAlcaldia = "Milpa Alta";
+      handleEmptyAlcaldia();
+      break;
+
+    case "tlahuac":
+      currentAlcaldia = "Tláhuac";
+      handleEmptyAlcaldia();
+      break;
+
+    case "tlalpan":
+      console.log("Tlalpan");
+      showCostosWrapper();
+      showCoachWrapper();
+      hideContactoWrapper();
+      ubicacionInfoExtra3ID.classList.remove("hide");
+      descripcionTitulo.textContent = "Tlalpan";
+      descripcionInfo.textContent = "Gimnasio Juan Fabila Villa Olímpica";
+      descripcionInfo2.textContent =
+        "Av. de los Insurgentes Sur s/n, Parques del Pedregal, Tlalpan, 14010 Ciudad de México, CDMX";
+      let hr = document.createElement("hr");
+      hr.className = "hrSeparator";
+      descripcionInfo2.appendChild(hr);
+      descripcionInfo3.textContent = "Deportivo La Joya";
+      descripcionInfo4.textContent =
+        "Av. de los Insurgentes Sur s/n, Parques del Pedregal, Tlalpan, 14010 Ciudad de México, CDMX";
+      locationIcon1.style.display = "block";
+      locationIcon2.style.display = "block";
+      locationIconInfo.setAttribute(
+        "href",
+        "https://maps.app.goo.gl/Mcz5rYfaJRkc56L36"
+      );
+      locationIconInfo2.setAttribute(
+        "href",
+        "https://maps.app.goo.gl/C8Kn5KDFC7gCd2MAA"
+      );
+      horariosInfo.textContent =
+        "Lunes y Miércoles de 19:00 a 22:00 - Cloth Mixto - Gimnasio Juan Fabila Villa Olímpica\n\nMartes y Jueves de 09:00 a 10:30 - Infantil - Deportivo La Joya";
+      costosInfo.textContent = "Cloth Mixto: $300 Mensual\n\nInfantil: GRATIS";
+      coachInfo.textContent = "Carlos “Pato” de la Riva";
+      coachInfo2.textContent = "";
+      whatsappIcon2.style.display = "none";
+      whatsappIconInfo.setAttribute(
+        "href",
+        "https://wa.me/525534449982?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Tlalpan"
+      );
+      break;
+
+    case "venustianoCarranza":
+      currentAlcaldia = "Venustiano Carranza";
+      handleEmptyAlcaldia();
+      break;
+
+    case "xochimilco":
+      currentAlcaldia = "Xochimilco";
+      handleEmptyAlcaldia();
+      break;
+
+    default:
+      descripcionTitulo.textContent = "";
+      ubicacionTitulo.textContent =
+        "Aquí podrás encontrar en dónde entrenar, solo da click en tu alcaldía y recibirás toda la información necesaria.";
+      descripcionInfo.textContent = "";
+      horariosTitulo.textContent =
+        "¿No encuentras equipo en tu alcaldía? ¡Abre tu propio equipo! Comunícate con nosotros.";
+      horariosInfo.textContent = "";
+      costosTitulo.textContent = "";
+      costosInfo.textContent = "";
+      coachTitulo.textContent = "";
+      coachInfo.textContent = "";
+      descripcionInfo3.textContent = "";
+      descripcionInfo4.textContent = "";
+
+      locationIcon1.style.display = "none";
+      locationIcon2.style.display = "none";
+      hideCoachWrapper();
+      hideCostosWrapper();
+      showContactoWrapper();
+      break;
+  }
 }
