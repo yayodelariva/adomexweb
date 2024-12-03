@@ -545,7 +545,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   desktopFotos.href = "../fotossitio/index.html";
   mobileTienda.href = "https://dodgeball.shop/collections/all";
   desktopTienda.href = "https://dodgeball.shop/collections/all";
-} else if (window.location.pathname.includes("/fotos/")) {
+} else if (window.location.pathname.includes("/fotossitio/")) {
   logoADOMEX.src = "../images/adomexLogoEDIT.png";
   adomexLogo.href = "../index.html";
   mobileSobre.href = "../sobreAdomex/index.html";
