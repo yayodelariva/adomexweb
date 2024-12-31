@@ -705,30 +705,33 @@ hr {
   color: #db3932;
 }
 
-.facebookIcon {
+.facebookIconFooter {
   text-decoration: none;
   color: beige;
+  font-size: 2.3rem;
 }
 
-.facebookIcon:hover {
+.facebookIconFooter:hover {
   color: #db3932;
 }
 
-.instagramIcon {
+.instagramIconFooter {
   text-decoration: none;
   color: beige;
+  font-size: 2.3rem;
 }
 
-.instagramIcon:hover {
+.instagramIconFooter:hover {
   color: #db3932;
 }
 
-.whatsappIcon {
+.whatsappIconFooter {
   text-decoration: none;
   color: beige;
+  font-size: 2.3rem;
 }
 
-.whatsappIcon:hover {
+.whatsappIconFooter:hover {
   color: #db3932;
 }
 
