@@ -63,17 +63,17 @@ let logoLobosCloned1 = logoLobos.cloneNode(true);
 let logoLobosCloned2 = logoLobos.cloneNode(true);
 let logoLobosCloned3 = logoLobos.cloneNode(true);
 
-let logoBJ = document.createElement("img");
-logoBJ.src = "img/logo-bj.png";
-let logoBJCloned = logoBJ.cloneNode(true);
-let logoBJCloned1 = logoBJ.cloneNode(true);
-let logoBJCloned2 = logoBJ.cloneNode(true);
-let logoBJCloned3 = logoBJ.cloneNode(true);
+let logoBJImg = document.createElement("img");
+logoBJImg.src = "img/logo-bj.png";
+let logoBJCloned = logoBJImg.cloneNode(true);
+let logoBJCloned1 = logoBJImg.cloneNode(true);
+let logoBJCloned2 = logoBJImg.cloneNode(true);
+let logoBJCloned3 = logoBJImg.cloneNode(true);
 
 //MATCH 1
 match1Score.innerHTML = "5-2";
 match1Logo1.appendChild(logoLobos);
-match1Logo2.appendChild(logoBJ);
+match1Logo2.appendChild(logoBJImg);
 
 match2Score.innerHTML = "1-3";
 match2Logo1.appendChild(logoLobosCloned);
