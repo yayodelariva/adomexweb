@@ -34,40 +34,46 @@ const miembro6FotoContainer = document.querySelector(
 const miembro6Nombre = document.querySelector(".miembro6 > .miembroNombre");
 const miembro6Cargo = document.querySelector(".miembro6 > .miembroCargo");
 
-let placeholderImg = document.createElement("img");
-placeholderImg.src = "../../images/equiposlogos/placeholder.jpg";
-let placeholderImgCloned = placeholderImg.cloneNode(true);
-let placeholderImgCloned1 = placeholderImg.cloneNode(true);
-let placeholderImgCloned2 = placeholderImg.cloneNode(true);
-let placeholderImgCloned3 = placeholderImg.cloneNode(true);
-let placeholderImgCloned4 = placeholderImg.cloneNode(true);
+let luisDeLaRivaFoto = document.createElement("img");
+let rogelioMoralesFoto = document.createElement("img");
+let carlosDeLaRivaFoto = document.createElement("img");
+let sabrinaHuertaFoto = document.createElement("img");
+let luceroMorenoFoto = document.createElement("img");
+let barbaraFuentesFoto = document.createElement("img");
+
+luisDeLaRivaFoto.src = "../../images/equiposlogos/placeholder.jpg";
+rogelioMoralesFoto.src = "../../images/equiposlogos/placeholder.jpg";
+carlosDeLaRivaFoto.src = "carlosDeLaRiva.jpg";
+sabrinaHuertaFoto.src = "sabrinaHuerta.jpg";
+luceroMorenoFoto.src = "luceroMoreno.jpg";
+barbaraFuentesFoto.src = "../../images/equiposlogos/placeholder.jpg";
 
 // PRESIDENTE
-miembro1FotoContainer.appendChild(placeholderImg);
+miembro1FotoContainer.appendChild(luisDeLaRivaFoto);
 miembro1Nombre.innerHTML = "Luis de la Riva";
 miembro1Cargo.innerHTML = "Presidente Vitalicio";
 
 //VICEPRESIDENTE
-miembro2FotoContainer.appendChild(placeholderImgCloned1);
+miembro2FotoContainer.appendChild(rogelioMoralesFoto);
 miembro2Nombre.innerHTML = "Rogelio Morales";
 miembro2Cargo.innerHTML = "Presidente";
 
 //SECRETARIO
-miembro3FotoContainer.appendChild(placeholderImgCloned2);
+miembro3FotoContainer.appendChild(carlosDeLaRivaFoto);
 miembro3Nombre.innerHTML = "Carlos de la Riva";
 miembro3Cargo.innerHTML = "Vicepresidente";
 
 //TESORERO
-miembro4FotoContainer.appendChild(placeholderImgCloned3);
+miembro4FotoContainer.appendChild(sabrinaHuertaFoto);
 miembro4Nombre.innerHTML = "Sabrina Huerta";
 miembro4Cargo.innerHTML = "Secretaria";
 
 //COMISARIO
-miembro5FotoContainer.appendChild(placeholderImgCloned4);
+miembro5FotoContainer.appendChild(luceroMorenoFoto);
 miembro5Nombre.innerHTML = "Lucero Moreno";
 miembro5Cargo.innerHTML = "Tesorera";
 
 //NUEVO CONSEJO
-miembro6FotoContainer.appendChild(placeholderImgCloned);
+miembro6FotoContainer.appendChild(barbaraFuentesFoto);
 miembro6Nombre.innerHTML = "Barbara Fuentes";
 miembro6Cargo.innerHTML = "Vocal";
