@@ -146,14 +146,6 @@ body {
   width: 10rem;
 }
 
-.navbarLink:hover {
-  background-color: #f9dcc8;
-}
-
-.navbarcontainer span:hover {
-  background-color: #f9dcc8;
-}
-
 @media (max-width: 500px) {
   .navbarcontainer {
     position: absolute;
@@ -170,7 +162,8 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 800;
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
+  padding-top: 2.5rem;
 }
 
 .navbarcontainer > ul {
@@ -391,7 +384,7 @@ body {
 }
 
 .dropdownSubOption:hover {
-  background-color: #b1a49a;
+  background-color: #f9dcc8;
 }
 
 .welcomecontainer {
@@ -748,6 +741,7 @@ hr {
   gap: 2rem;
   list-style-type: none;
   color: beige;
+  padding-left: 0;
 }
 
 .locationIcon {
