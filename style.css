@@ -28,6 +28,14 @@ body {
   height: 100vh;
   width: 100%;
 }
+@media (max-width: 1080px) {
+  .contentWrapper {
+    display: flex;
+    flex-direction: column;
+    height: 115vh;
+    width: 100%;
+  }
+}
 
 .contentWrapperNuestraHistoria {
   display: flex;
@@ -128,6 +136,12 @@ body {
   min-height: 69px;
 }
 
+@media (max-width: 1080px) {
+  .navbarcontainer {
+    flex-wrap: wrap;
+  }
+}
+
 .adomexLogo {
   width: 10rem;
 }
@@ -144,7 +158,7 @@ body {
   .navbarcontainer {
     position: absolute;
     width: 100%;
-    height: 10%;
+    height: 13%;
     background-color: #ffffffe5;
     box-shadow: 2px 2px 5px;
     z-index: 3;
@@ -223,6 +237,7 @@ body {
 .subMenuOption {
   text-decoration: none;
   color: black;
+  padding-right: 1rem;
 }
 
 .sobreOption {
@@ -348,6 +363,7 @@ body {
   border-top: 1px solid;
   padding-top: 14px;
   padding-bottom: 14px;
+  padding-left: 1rem;
 }
 
 .subDropdownContainer:hover {
@@ -360,7 +376,7 @@ body {
 
 .plusBtn:hover .subDropdown-content {
   display: block;
-  background-color: #ddd;
+  background-color: #ddd0;
 }
 
 .dropdownSubOption {
@@ -407,6 +423,13 @@ body {
   top: 15%;
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
+}
+
+@media (max-width: 1080px) {
+  .welcomecontainerQuienesSomos {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -472,6 +495,12 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 1080px) {
+  .welcomecontainer {
+    top: 24%;
+  }
+}
+
 @media (max-width: 500px) {
   .welcomecontainer {
     position: absolute;
@@ -494,6 +523,12 @@ body {
   text-align: justify;
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+@media (max-width: 1080px) {
+  .welcomecontainer > p {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -571,6 +606,12 @@ body {
   width: 750px;
 }
 
+@media (max-width: 500px) {
+  .welcomecontainerLigaMexicana > p {
+    max-width: 10em;
+  }
+}
+
 .landingpagebackground {
   width: 100%;
   height: 100%;
@@ -590,9 +631,16 @@ body {
   padding-bottom: 8rem;
 }
 
+@media (max-width: 1080px) {
+  .landingpagebackground > img {
+    height: 115vh;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 500px) {
   .landingpagebackground > img {
-    height: 100vh;
+    height: 115vh;
     object-fit: cover;
   }
 }
@@ -625,6 +673,12 @@ hr {
   display: flex;
   width: 80%;
   padding-bottom: 3rem;
+}
+
+@media (max-width: 1080px) {
+  .mapaYRedesContainer {
+    width: AUTO;
+  }
 }
 
 @media (max-width: 500px) {
@@ -760,9 +814,22 @@ hr {
   padding-bottom: 1.8rem;
 }
 
+@media (max-width: 1080px) {
+  .logosWrapper > a > img {
+    width: 75%;
+    max-width: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
 @media (max-width: 500px) {
   .logosWrapper > a > img {
-    width: 100%;
+    width: 80%;
     max-width: 6rem;
     display: flex;
     align-items: center;
@@ -958,6 +1025,16 @@ hr {
   gap: 5rem;
 }
 
+@media (max-width: 1080px) {
+  .ligasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 4rem;
+  }
+}
+
 @media (max-width: 500px) {
   .ligasContainer {
     display: flex;
@@ -997,8 +1074,20 @@ hr {
   width: 13rem;
 }
 
+@media (max-width: 1080px) {
+  .imgLigas {
+    width: 10rem;
+  }
+}
+
 .imgLigaMex {
   width: 16rem;
+}
+
+@media (max-width: 1080px) {
+  .imgLigaMex {
+    width: 13rem;
+  }
 }
 
 /* FOTOS */
@@ -1018,6 +1107,13 @@ hr {
   row-gap: 2rem;
   justify-content: center;
   padding-top: 11rem;
+}
+
+@media (max-width: 1080px) {
+  .gridFotos {
+    grid-template-columns: repeat(2, 0.23fr);
+    column-gap: 1rem;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1456,7 +1552,6 @@ path:hover {
   background: antiquewhite;
   padding-top: 8rem;
   padding-bottom: 4rem;
-  height: 100vh;
 }
 
 @media (max-width: 500px) {
@@ -1472,6 +1567,12 @@ path:hover {
   justify-content: center;
 }
 
+@media (max-width: 1080px) {
+  .eventGrid {
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+}
+
 @media (max-width: 500px) {
   .eventGrid {
     display: grid;
@@ -1483,8 +1584,8 @@ path:hover {
 
 .eventCard {
   display: flex;
-  height: 13rem;
-  width: 23rem;
+  height: 9rem;
+  width: 17rem;
   border: solid 1px;
   display: flex;
   justify-content: center;
