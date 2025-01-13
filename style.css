@@ -602,6 +602,7 @@ body {
 @media (max-width: 500px) {
   .welcomecontainerLigaMexicana > p {
     max-width: 10em;
+    text-align: center;
   }
 }
 
@@ -1692,4 +1693,50 @@ path:hover {
 
 .hide {
   display: none;
+}
+
+/*PRIVACY*/
+
+.welcomecontainerPrivacy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25%;
+  margin-right: 25%;
+
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  top: 20%;
+}
+
+@media (max-width: 1080px) {
+  .welcomecontainerPrivacy {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcomecontainerPrivacy {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.welcomecontainerPrivacy > p {
+  opacity: 1;
+  color: black;
+  text-align: justify;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (max-width: 500px) {
+  .welcomecontainerPrivacy > p {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 20rem;
+  }
 }
