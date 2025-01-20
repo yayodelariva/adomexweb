@@ -1753,7 +1753,6 @@ path:hover {
   width: 17rem;
   border: solid 1px;
   display: flex;
-  justify-content: center;
   gap: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
