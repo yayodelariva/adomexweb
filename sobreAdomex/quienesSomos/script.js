@@ -41,12 +41,12 @@ let sabrinaHuertaFoto = document.createElement("img");
 let luceroMorenoFoto = document.createElement("img");
 let barbaraFuentesFoto = document.createElement("img");
 
-luisDeLaRivaFoto.src = "../../images/equiposlogos/placeholder.jpg";
+luisDeLaRivaFoto.src = "luisDeLaRiva.jpg";
 rogelioMoralesFoto.src = "../../images/equiposlogos/placeholder.jpg";
 carlosDeLaRivaFoto.src = "carlosDeLaRiva.jpg";
 sabrinaHuertaFoto.src = "sabrinaHuerta.jpg";
 luceroMorenoFoto.src = "luceroMoreno.jpg";
-barbaraFuentesFoto.src = "../../images/equiposlogos/placeholder.jpg";
+barbaraFuentesFoto.src = "barbaraFuentes.jpg";
 
 // PRESIDENTE
 miembro1FotoContainer.appendChild(luisDeLaRivaFoto);
