@@ -135,13 +135,10 @@ function handleAlcaldias(e) {
           "Lunes y miércoles de 21:00 a 23:00 - Femenil\n\nMartes y jueves de 21:00 a 23:00 - Varonil\n\nViernes de 21:00 a 23:00 - Mixto\n\nSábados de 08:00 a 10:00 Infantil/Cloth Mixto/Foam Varonil, Femenil y Mixto";
         costosInfo.textContent =
           "$300 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
-        coachInfo.textContent = "Rogelio Morales: Foam Femenil, Foam Infantil";
+        coachInfo.style.display = "none";
         coachInfo2.textContent = "Luis de la Riva: Foam Varonil";
         whatsappIcon2.style.display = "block";
-        whatsappIconInfo.setAttribute(
-          "href",
-          "https://wa.me/525547755866?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
-        );
+        whatsappIconInfo.style.display = "none";
         whatsappIconInfo2.setAttribute(
           "href",
           "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
