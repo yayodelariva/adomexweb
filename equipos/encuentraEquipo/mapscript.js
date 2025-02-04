@@ -213,7 +213,7 @@ function handleAlcaldias(e) {
         );
         whatsappIconInfo2.setAttribute(
           "href",
-          "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
+          "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Cuauhtémoc"
         );
         showCoachWrapper();
         showContactoWrapper();
