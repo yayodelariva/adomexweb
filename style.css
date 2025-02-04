@@ -83,6 +83,13 @@ body {
   background-position-x: center;
   background-position-y: center; */
 }
+
+@media (max-width: 500px) {
+  .content {
+    padding-top: 9em;
+  }
+}
+
 .contentElDodgeballEnMexico {
   background-color: antiquewhite;
   height: 100%;
@@ -1348,6 +1355,17 @@ path {
   transition: fill 0.4s;
 }
 
+#cuauhtemoc {
+  fill: rgb(56, 123, 59);
+}
+
+#cuauhtemoc:hover {
+  fill: rgb(212, 236, 128);
+  stroke: #db3932;
+  stroke-width: 3px;
+  transition: fill 0.4s;
+}
+
 #tlalpan {
   fill: rgb(56, 123, 59);
 }
@@ -1394,7 +1412,7 @@ path:hover {
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    gap: 5rem;
+    gap: 2.5em;
   }
 }
 
@@ -1413,7 +1431,6 @@ path:hover {
 .alcaldiaDescripcion {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
   max-width: 30rem;
   width: 480px;
 }
@@ -1422,6 +1439,7 @@ path:hover {
   .alcaldiaDescripcion {
     width: auto;
     max-width: auto;
+    align-items: center;
   }
 }
 
@@ -1511,9 +1529,17 @@ path:hover {
 }
 
 .alcaldiaTitulo {
-  font-size: 1.6rem;
+  font-size: 2.2em;
   text-align: center;
   font-weight: bolder;
+  padding-bottom: 0.8em;
+}
+
+.equipoDeAlcaldia {
+  font-size: 1.6em;
+  text-align: center;
+  font-weight: bolder;
+  padding-bottom: 0.5em;
 }
 
 .alcaldiasFormTop {
@@ -1539,10 +1565,14 @@ path:hover {
   white-space: pre-line;
 }
 
+.modalidadInfo {
+  font-size: 1rem;
+  white-space: pre-line;
+}
+
 .ubicacionInfoContainer {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 /* @media (max-width: 500px) {

@@ -18,7 +18,7 @@ const alcaldias = document.querySelectorAll("path");
 const mapaAlcaldia = document.querySelector(".mapaAlcaldia");
 const alcaldiaMenu = document.querySelector("#alcaldiaMenu");
 const alcaldiasMenuContainer = document.querySelector(
-  ".alcaldiasMenuContainer"
+  "#alcaldiasMenuContainer"
 );
 const alcaldiasFormTop = document.querySelector(".alcaldiasFormTop");
 const alcaldiasForm = document.querySelector(".alcaldiasForm");
@@ -30,10 +30,18 @@ const ubicacionYLogoContainerID = document.querySelector(
 const alcaldiasMenuContainerID = document.querySelector(
   "#alcaldiasMenuContainer"
 );
+const mapaYDescripcionContainer = document.querySelector(
+  ".mapaYDescripcionContainer"
+);
 
 let alcaldiaDescripcion = document.querySelector(".alcaldiaDescripcion");
 let descripcionTitulo = document.querySelector(".alcaldiaTitulo");
+let modalidadInfoWrapperTitulo = document.querySelector(
+  ".modalidadInfoWrapperTitulo"
+);
+let modalidadInfo = document.querySelector(".modalidadInfo");
 let ubicacionTitulo = document.querySelector(".ubicacionTitulo");
+let equipoDeAlcaldia = document.querySelector(".equipoDeAlcaldia");
 let descripcionInfo = document.querySelector(".ubicacionInfo");
 let descripcionInfo2 = document.querySelector(".ubicacionInfoExtra");
 let descripcionInfo3 = document.querySelector(".ubicacionInfoExtra2");
@@ -59,6 +67,8 @@ let whatsappIconInfo = document.querySelector(".whatsappIconInfo");
 let whatsappIconInfo2 = document.querySelector(".whatsappIconInfo2");
 let whatsappIcon = document.querySelector(".whatsappIcon");
 let whatsappIcon2 = document.querySelector(".whatsappLogo2");
+let hr = document.createElement("hr");
+hr.className = "hrSeparator";
 
 const alvaroObregonContent = document.querySelector("#alvaroObregonContent");
 const azcapotzalcoContent = document.querySelector("#azcapotzalcoContent");
@@ -120,6 +130,8 @@ function handleAlcaldias(e) {
         coachWrapper.style.display = "block";
         costosWrapper.style.display = "block";
         descripcionTitulo.textContent = "Benito Juarez";
+        equipoDeAlcaldia.textContent = '"Lobos Club de Dodgeball"';
+        modalidadInfo.textContent = "Foam y Cloth\n\nFemenil, Mixto y Varonil";
         descripcionInfo.textContent = "Gimnasio Eduardo Gorraez";
         descripcionInfo2.textContent =
           "Gral. Anaya, Benito Juárez, 03340 Ciudad de México, CDMX";
@@ -131,11 +143,12 @@ function handleAlcaldias(e) {
           "href",
           "https://maps.app.goo.gl/BYMmb5JcQtckgd3A8"
         );
-        horariosInfo.textContent =
-          "Lunes y miércoles de 21:00 a 23:00 - Femenil\n\nMartes y jueves de 21:00 a 23:00 - Varonil\n\nViernes de 21:00 a 23:00 - Mixto\n\nSábados de 08:00 a 10:00 Infantil/Cloth Mixto/Foam Varonil, Femenil y Mixto";
-        costosInfo.textContent =
-          "$300 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
+
+        horariosInfo.textContent = "Lunes y miércoles de 20:00 a 23:00";
         coachInfo.style.display = "none";
+        costosInfo.textContent =
+          "$1000 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
+
         coachInfo2.textContent = "Luis de la Riva: Foam Varonil";
         whatsappIcon2.style.display = "block";
         whatsappIconInfo.style.display = "none";
@@ -169,13 +182,42 @@ function handleAlcaldias(e) {
         break;
       case "cuauhtemoc":
         console.log("Cuauhtemoc");
-        descripcionTitulo.textContent = "Cuauhtemoc";
-        // descripcionInfo.textContent = "descripcion";
-        // horariosInfo.textContent = "";
-        // costosInfo.textContent = "";
-        // coachInfo.textContent = "";
-        currentAlcaldia = "Cuauhtémoc";
-        handleEmptyAlcaldia();
+        coachWrapper.style.display = "block";
+        costosWrapper.style.display = "block";
+        descripcionTitulo.textContent = "Cuauhtémoc";
+        equipoDeAlcaldia.textContent = '"Lobos Club de Dodgeball"';
+        modalidadInfo.textContent = "Foam y Cloth\n\nFemenil, Mixto y Varonil";
+        descripcionInfo.textContent = "Universidad La Salle";
+        descripcionInfo2.textContent =
+          "Carlos B. Zetina, Hipódromo Condesa, Miguel Hidalgo, 06170 Ciudad de México, CDMX";
+        descripcionInfo3.textContent = "";
+        descripcionInfo4.textContent = "";
+        locationIcon1.style.display = "block";
+        locationIcon2.style.display = "none";
+        locationIconInfo.setAttribute(
+          "href",
+          "https://maps.app.goo.gl/awz3QQwT54Z8ZTah6"
+        );
+
+        horariosInfo.textContent = "Martes y jueves de 20:00 a 23:00";
+        costosInfo.textContent =
+          "$1000 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
+        coachInfo.style.display = "block";
+        coachInfo.textContent = 'Carlos "Pato" de la Riva - Mixto y Varonil';
+        coachInfo2.textContent = "Luis de la Riva - Femenil";
+        whatsappIcon2.style.display = "block";
+        whatsappIconInfo.style.display = "block";
+        whatsappIconInfo.setAttribute(
+          "href",
+          "https://wa.me/525534449982?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Cuauhtémoc"
+        );
+        whatsappIconInfo2.setAttribute(
+          "href",
+          "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
+        );
+        showCoachWrapper();
+        showContactoWrapper();
+        hideContactoWrapper();
         break;
       case "gustavoAMadero":
         console.log("Gustavo A. Madero");
@@ -203,6 +245,8 @@ function handleAlcaldias(e) {
         showCoachWrapper();
         hideContactoWrapper();
         descripcionTitulo.textContent = "Iztapalapa";
+        equipoDeAlcaldia.textContent = "Aguilas Ixtapalcalli";
+        modalidadInfo.textContent = "Foam y Cloth\n\nFemenil, Mixto y Varonil";
         descripcionInfo.textContent = "Utopía Ixtapalcalli";
         descripcionInfo2.textContent =
           "Ayuntamiento 133, San Pedro Iztapalapa, CDMX";
@@ -217,8 +261,10 @@ function handleAlcaldias(e) {
         horariosInfo.textContent =
           "Miércoles y Viernes de 15:30 a 17:30 - Foam mixto todas las edades\n\nSábados de 09:00 a 11:30 - Foam mixto todas las edades";
         costosInfo.textContent = "GRATIS";
-        coachInfo.textContent = "Carlos “Pato” de la Riva: 5534449982";
+        coachInfo.style.display = "block";
+        coachInfo.textContent = "Carlos “Pato” de la Riva";
         coachInfo2.textContent = "";
+        whatsappIconInfo.style.display = "block";
         whatsappIcon2.style.display = "none";
         whatsappIconInfo.setAttribute(
           "href",
@@ -271,11 +317,11 @@ function handleAlcaldias(e) {
         showCoachWrapper();
         hideContactoWrapper();
         descripcionTitulo.textContent = "Tlalpan";
+        equipoDeAlcaldia.textContent = '"Lobos Club de Dodgeball"';
+        modalidadInfo.textContent = "Cloth";
         descripcionInfo.textContent = "Gimnasio Juan Fabila Villa Olímpica";
         descripcionInfo2.textContent =
           "Av. de los Insurgentes Sur s/n, Parques del Pedregal, Tlalpan, 14010 Ciudad de México, CDMX";
-        let hr = document.createElement("hr");
-        hr.className = "hrSeparator";
         descripcionInfo2.appendChild(hr);
         descripcionInfo3.textContent = "Deportivo La Joya";
         descripcionInfo4.textContent =
@@ -293,9 +339,11 @@ function handleAlcaldias(e) {
         horariosInfo.textContent =
           "Lunes y Miércoles de 19:00 a 22:00 - Cloth Mixto - Gimnasio Juan Fabila Villa Olímpica\n\nMartes y Jueves de 09:00 a 10:30 - Infantil - Deportivo La Joya";
         costosInfo.textContent =
-          "Cloth Mixto: $300 Mensual\n\nInfantil: GRATIS";
+          "Cloth Mixto: $1000 Mensual\n\nInfantil: GRATIS";
         coachInfo.textContent = "Carlos “Pato” de la Riva";
         coachInfo2.textContent = "";
+        coachInfo.style.display = "block";
+        whatsappIconInfo.style.display = "block";
         whatsappIcon2.style.display = "none";
         whatsappIconInfo.setAttribute(
           "href",
@@ -328,6 +376,9 @@ function handleAlcaldias(e) {
         descripcionTitulo.textContent = "";
         ubicacionTitulo.textContent =
           "Aquí podrás encontrar en dónde entrenar, solo da click en tu alcaldía y recibirás toda la información necesaria.";
+        equipoDeAlcaldia.textContent = "";
+        modalidadInfoWrapperTitulo.textContent = "";
+        modalidadInfo.textContent = "";
         descripcionInfo.textContent = "";
         horariosTitulo.textContent =
           "¿No encuentras equipo en tu alcaldía? ¡Abre tu propio equipo! Comunícate con nosotros.";
@@ -378,6 +429,8 @@ function clearContents() {
   descripcionInfo.textContent = "";
   descripcionInfo2.textContent = "";
   ubicacionTitulo.textContent = "Ubicación";
+  equipoDeAlcaldia.textContent = "";
+  modalidadInfoWrapperTitulo.textContent = "Modalidad";
   horariosTitulo.textContent = "Horarios";
   costosTitulo.textContent = "Costo";
   coachTitulo.textContent = "Coach";
@@ -385,6 +438,7 @@ function clearContents() {
 
 function handleEmptyAlcaldia() {
   descripcionTitulo.textContent = currentAlcaldia;
+  modalidadInfoWrapperTitulo.textContent = "";
   ubicacionTitulo.textContent =
     "Lo sentimos, por el momento ésta alcaldía no cuenta con un equipo. Si perteneces a esta alcaldía y te gustaría abrir tu propio equipo, ¡Comunícate con nosotros!";
   descripcionInfo.textContent = "";
@@ -394,6 +448,7 @@ function handleEmptyAlcaldia() {
     "O si prefieres entrenar con un equipo existente, puedes dar click a las alcaldías de color verde";
   coachTitulo.textContent = "";
   costosTitulo.textContent = "";
+  modalidadInfo.textContent = "";
   horariosInfo.textContent = "";
   costosInfo.textContent = "";
   coachInfo.textContent = "";
@@ -406,6 +461,7 @@ function handleEmptyAlcaldia() {
 }
 
 // THIS IS THE LANDING PAGE OF THE MAP
+modalidadInfoWrapperTitulo.textContent = "";
 ubicacionTitulo.textContent =
   "Aquí podrás encontrar en dónde entrenar, solo da click en tu alcaldía y recibirás toda la información necesaria.";
 horariosTitulo.textContent =
@@ -455,12 +511,10 @@ alcaldiaMenu.addEventListener("change", handleAlcaldiaSelection);
 
 function handleAlcaldiaSelection() {
   clearContents();
-  alcaldiasMenuContainer.prepend(alcaldiasForm);
-  alcaldiasFormTop.append(alcaldiasForm);
+  mapaYDescripcionContainer.append(alcaldiasMenuContainer);
   ubicacionInfoExtra2ID.classList.add("hide");
   ubicacionInfoExtra3ID.classList.add("hide");
   ubicacionYLogoContainerID.classList.add("hide");
-  alcaldiasMenuContainerID.classList.add("hide");
 
   switch (alcaldiaMenu.value) {
     case "alvaroObregon":
@@ -474,9 +528,12 @@ function handleAlcaldiaSelection() {
       break;
 
     case "benitoJuarez":
+      console.log("Benito Juarez");
       coachWrapper.style.display = "block";
       costosWrapper.style.display = "block";
       descripcionTitulo.textContent = "Benito Juarez";
+      equipoDeAlcaldia.textContent = '"Lobos Club de Dodgeball"';
+      modalidadInfo.textContent = "Foam y Cloth\n\nFemenil, Mixto y Varonil";
       descripcionInfo.textContent = "Gimnasio Eduardo Gorraez";
       descripcionInfo2.textContent =
         "Gral. Anaya, Benito Juárez, 03340 Ciudad de México, CDMX";
@@ -488,17 +545,15 @@ function handleAlcaldiaSelection() {
         "href",
         "https://maps.app.goo.gl/BYMmb5JcQtckgd3A8"
       );
-      horariosInfo.textContent =
-        "Lunes y miércoles de 21:00 a 23:00 - Femenil\n\nMartes y jueves de 21:00 a 23:00 - Varonil\n\nViernes de 21:00 a 23:00 - Mixto\n\nSábados de 08:00 a 10:00 Infantil/Cloth Mixto/Foam Varonil, Femenil y Mixto";
+
+      horariosInfo.textContent = "Lunes y miércoles de 20:00 a 23:00";
+      coachInfo.style.display = "none";
       costosInfo.textContent =
-        "$300 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
-      coachInfo.textContent = "Rogelio Morales: Foam Femenil, Foam Infantil";
+        "$1000 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
+
       coachInfo2.textContent = "Luis de la Riva: Foam Varonil";
       whatsappIcon2.style.display = "block";
-      whatsappIconInfo.setAttribute(
-        "href",
-        "https://wa.me/525547755866?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
-      );
+      whatsappIconInfo.style.display = "none";
       whatsappIconInfo2.setAttribute(
         "href",
         "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
@@ -506,7 +561,6 @@ function handleAlcaldiaSelection() {
       showCoachWrapper();
       showContactoWrapper();
       hideContactoWrapper();
-      // Code for benitoJuarez
       break;
 
     case "coyoacan":
@@ -520,8 +574,44 @@ function handleAlcaldiaSelection() {
       break;
 
     case "cuauhtemoc":
-      currentAlcaldia = "Cuauhtémoc";
-      handleEmptyAlcaldia();
+    case "cuauhtemoc":
+      console.log("Cuauhtemoc");
+      coachWrapper.style.display = "block";
+      costosWrapper.style.display = "block";
+      descripcionTitulo.textContent = "Cuauhtémoc";
+      equipoDeAlcaldia.textContent = '"Lobos Club de Dodgeball"';
+      modalidadInfo.textContent = "Foam y Cloth\n\nFemenil, Mixto y Varonil";
+      descripcionInfo.textContent = "Universidad La Salle";
+      descripcionInfo2.textContent =
+        "Carlos B. Zetina, Hipódromo Condesa, Miguel Hidalgo, 06170 Ciudad de México, CDMX";
+      descripcionInfo3.textContent = "";
+      descripcionInfo4.textContent = "";
+      locationIcon1.style.display = "block";
+      locationIcon2.style.display = "none";
+      locationIconInfo.setAttribute(
+        "href",
+        "https://maps.app.goo.gl/awz3QQwT54Z8ZTah6"
+      );
+
+      horariosInfo.textContent = "Martes y jueves de 20:00 a 23:00";
+      costosInfo.textContent =
+        "$1000 mensuales\n*incluye acceso a entrenamientos de ambos formatos (foam y cloth), así como a los entrenamientos mixtos y al gimnasio";
+      coachInfo.style.display = "block";
+      coachInfo.textContent = 'Carlos "Pato" de la Riva - Mixto y Varonil';
+      coachInfo2.textContent = "Luis de la Riva - Femenil";
+      whatsappIcon2.style.display = "block";
+      whatsappIconInfo.style.display = "block";
+      whatsappIconInfo.setAttribute(
+        "href",
+        "https://wa.me/525534449982?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Cuauhtémoc"
+      );
+      whatsappIconInfo2.setAttribute(
+        "href",
+        "https://wa.me/525514329482?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Benito%20Juárez"
+      );
+      showCoachWrapper();
+      showContactoWrapper();
+      hideContactoWrapper();
       break;
 
     case "gustavoAMadero":
@@ -540,6 +630,8 @@ function handleAlcaldiaSelection() {
       showCoachWrapper();
       hideContactoWrapper();
       descripcionTitulo.textContent = "Iztapalapa";
+      equipoDeAlcaldia.textContent = "Aguilas Ixtapalcalli";
+      modalidadInfo.textContent = "Foam y Cloth\n\nFemenil, Mixto y Varonil";
       descripcionInfo.textContent = "Utopía Ixtapalcalli";
       descripcionInfo2.textContent =
         "Ayuntamiento 133, San Pedro Iztapalapa, CDMX";
@@ -554,8 +646,10 @@ function handleAlcaldiaSelection() {
       horariosInfo.textContent =
         "Miércoles y Viernes de 15:30 a 17:30 - Foam mixto todas las edades\n\nSábados de 09:00 a 11:30 - Foam mixto todas las edades";
       costosInfo.textContent = "GRATIS";
-      coachInfo.textContent = "Carlos “Pato” de la Riva: 5534449982";
+      coachInfo.style.display = "block";
+      coachInfo.textContent = "Carlos “Pato” de la Riva";
       coachInfo2.textContent = "";
+      whatsappIconInfo.style.display = "block";
       whatsappIcon2.style.display = "none";
       whatsappIconInfo.setAttribute(
         "href",
@@ -588,13 +682,12 @@ function handleAlcaldiaSelection() {
       showCostosWrapper();
       showCoachWrapper();
       hideContactoWrapper();
-      ubicacionInfoExtra3ID.classList.remove("hide");
       descripcionTitulo.textContent = "Tlalpan";
+      equipoDeAlcaldia.textContent = '"Lobos Club de Dodgeball"';
+      modalidadInfo.textContent = "Cloth";
       descripcionInfo.textContent = "Gimnasio Juan Fabila Villa Olímpica";
       descripcionInfo2.textContent =
         "Av. de los Insurgentes Sur s/n, Parques del Pedregal, Tlalpan, 14010 Ciudad de México, CDMX";
-      let hr = document.createElement("hr");
-      hr.className = "hrSeparator";
       descripcionInfo2.appendChild(hr);
       descripcionInfo3.textContent = "Deportivo La Joya";
       descripcionInfo4.textContent =
@@ -611,9 +704,11 @@ function handleAlcaldiaSelection() {
       );
       horariosInfo.textContent =
         "Lunes y Miércoles de 19:00 a 22:00 - Cloth Mixto - Gimnasio Juan Fabila Villa Olímpica\n\nMartes y Jueves de 09:00 a 10:30 - Infantil - Deportivo La Joya";
-      costosInfo.textContent = "Cloth Mixto: $300 Mensual\n\nInfantil: GRATIS";
+      costosInfo.textContent = "Cloth Mixto: $1000 Mensual\n\nInfantil: GRATIS";
       coachInfo.textContent = "Carlos “Pato” de la Riva";
       coachInfo2.textContent = "";
+      coachInfo.style.display = "block";
+      whatsappIconInfo.style.display = "block";
       whatsappIcon2.style.display = "none";
       whatsappIconInfo.setAttribute(
         "href",
@@ -632,6 +727,8 @@ function handleAlcaldiaSelection() {
       break;
 
     default:
+      modalidadInfoWrapperTitulo.textContent = "";
+      modalidadInfo.textContent = "";
       descripcionTitulo.textContent = "";
       ubicacionTitulo.textContent =
         "Aquí podrás encontrar en dónde entrenar, solo da click en tu alcaldía y recibirás toda la información necesaria.";
