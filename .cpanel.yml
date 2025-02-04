@@ -10,7 +10,7 @@ deployment:
     - "/bin/cp -R fonts $DEPLOYPATH"
     - "/bin/cp -R images $DEPLOYPATH"
     - "/bin/cp -R equipos $DEPLOYPATH"
-    - "/bin/cp -R fscripts $DEPLOYPATH"
+    - "/bin/cp -R scripts $DEPLOYPATH"
     - "/bin/cp privacy.html $DEPLOYPATH"
     - "/bin/cp index.html $DEPLOYPATH"
     - "/bin/cp style.css $DEPLOYPATH"
