@@ -42,7 +42,7 @@ let luceroMorenoFoto = document.createElement("img");
 let barbaraFuentesFoto = document.createElement("img");
 
 luisDeLaRivaFoto.src = "luisDeLaRiva.jpg";
-rogelioMoralesFoto.src = "../../images/equiposlogos/placeholder.jpg";
+rogelioMoralesFoto.src = "rogelioMorales.png";
 carlosDeLaRivaFoto.src = "carlosDeLaRiva.jpg";
 sabrinaHuertaFoto.src = "sabrinaHuerta.jpg";
 luceroMorenoFoto.src = "luceroMoreno.jpg";
