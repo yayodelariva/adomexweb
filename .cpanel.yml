@@ -1,16 +1,16 @@
 ---
 deployment:
-tasks:
-  - export DEPLOYPATH=/home1/bgyakwmy/public_html/
-  - /bin/cp -R fotossitio $DEPLOYPATH
-  - /bin/cp -R sobreAdomex $DEPLOYPATH
-  - /bin/cp -R ligas $DEPLOYPATH
-  - /bin/cp -R contacto $DEPLOYPATH
-  - /bin/cp -R eventos $DEPLOYPATH
-  - /bin/cp -R fonts $DEPLOYPATH
-  - /bin/cp -R images $DEPLOYPATH
-  - /bin/cp -R equipos $DEPLOYPATH
-  - /bin/cp -R fscripts $DEPLOYPATH
-  - /bin/cp privacy.html $DEPLOYPATH
-  - /bin/cp index.html $DEPLOYPATH
-  - /bin/cp style.css $DEPLOYPATH
+  tasks:
+    - "export DEPLOYPATH=/home1/bgyakwmy/public_html/"
+    - "/bin/cp -R fotossitio $DEPLOYPATH"
+    - "/bin/cp -R sobreAdomex $DEPLOYPATH"
+    - "/bin/cp -R ligas $DEPLOYPATH"
+    - "/bin/cp -R contacto $DEPLOYPATH"
+    - "/bin/cp -R eventos $DEPLOYPATH"
+    - "/bin/cp -R fonts $DEPLOYPATH"
+    - "/bin/cp -R images $DEPLOYPATH"
+    - "/bin/cp -R equipos $DEPLOYPATH"
+    - "/bin/cp -R fscripts $DEPLOYPATH"
+    - "/bin/cp privacy.html $DEPLOYPATH"
+    - "/bin/cp index.html $DEPLOYPATH"
+    - "/bin/cp style.css $DEPLOYPATH"
