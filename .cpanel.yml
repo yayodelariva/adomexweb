@@ -1,7 +1,7 @@
 ---
 deployment:
 tasks:
-  - export DEPLOYPATH=/home/bgyakwmy/public_html/
+  - export DEPLOYPATH=/home1/bgyakwmy/public_html/
   - /bin/cp -R fotossitio $DEPLOYPATH
   - /bin/cp -R sobreAdomex $DEPLOYPATH
   - /bin/cp -R ligas $DEPLOYPATH
