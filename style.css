@@ -481,12 +481,14 @@ body {
   height: auto;
   z-index: 1;
   top: 20%;
+  gap: 1.5em;
 }
 
 @media (max-width: 500px) {
   .welcomecontainerLigaMexicana {
     margin-left: 0;
     margin-right: 0;
+    gap: 1.5em;
   }
 }
 
@@ -1680,6 +1682,40 @@ path:hover {
 .mainTextContainer {
   height: 100%;
   padding-bottom: 4rem;
+}
+
+.ligaMexicanaSocialsWrapper {
+  display: flex;
+  gap: 1.7em;
+  justify-content: center;
+  align-items: center;
+}
+
+.ligaMexicanaInstagram {
+  font: 2em;
+  color: black;
+}
+
+#ligaMexInstaLogo {
+  font-size: 2.7em;
+}
+
+#ligaMexInstaLogo:hover {
+  color: #db3932;
+}
+
+.ligaMexicanaTiktok {
+  font-size: 1.5em;
+  color: black;
+}
+
+.ligaMexicanaTiktok:hover {
+  font-size: 1.5em;
+  color: #db3932;
+}
+
+.fa-tiktok {
+  font-size: 1.5em;
 }
 
 .matchBoardContainer {
