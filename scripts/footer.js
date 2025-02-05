@@ -57,7 +57,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -75,7 +75,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -93,7 +93,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -111,7 +111,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -129,7 +129,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../eventos/index.html";
   fotosFooter.href = "../fotossitio/index.html";
   avisoPrivacidad.href = "../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImg();
@@ -148,7 +148,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -167,7 +167,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -186,7 +186,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../eventos/index.html";
   fotosFooter.href = "../fotossitio/index.html";
   avisoPrivacidad.href = "../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImg();
@@ -205,7 +205,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -224,7 +224,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -242,7 +242,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../../eventos/index.html";
   fotosFooter.href = "../../fotossitio/index.html";
   avisoPrivacidad.href = "../../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImgLong();
@@ -260,7 +260,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../eventos/index.html";
   fotosFooter.href = "../fotossitio/index.html";
   avisoPrivacidad.href = "../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImg();
@@ -279,7 +279,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../eventos/index.html";
   fotosFooter.href = "../fotossitio/index.html";
   avisoPrivacidad.href = "../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImg();
@@ -298,7 +298,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "../eventos/index.html";
   fotosFooter.href = "../fotossitio/index.html";
   avisoPrivacidad.href = "../privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   getSocialMediaLinks();
   getLogoLinks();
   getLogoImg();
@@ -316,7 +316,7 @@ if (window.location.pathname.includes("/quienesSomos/")) {
   eventosFooter.href = "eventos/index.html";
   fotosFooter.href = "fotossitio/index.html";
   avisoPrivacidad.href = "privacy.html";
-  creditContainer.href = "https://wwww.github.com/yayodelariva";
+  creditContainer.href = "https://www.github.com/yayodelariva";
   logoHunza.src = "images/logos/logoHunza.png";
   logoBJ.src = "images/logos/logoBJ.png";
   logoIztapalapa.src = "images/logos/logoIztapalapa.jpeg";
