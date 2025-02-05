@@ -206,7 +206,7 @@ function handleAlcaldias(e) {
         coachInfo.textContent = 'Carlos "Pato" de la Riva - Mixto y Varonil';
         coachInfo2.textContent = "Luis de la Riva - Femenil";
         whatsappIcon2.style.display = "block";
-        whatsappIconInfo.style.display = "block";
+        whatsappIconInfo.style.display = "none";
         whatsappIconInfo.setAttribute(
           "href",
           "https://wa.me/525534449982?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Cuauhtémoc"
@@ -264,7 +264,7 @@ function handleAlcaldias(e) {
         coachInfo.style.display = "block";
         coachInfo.textContent = "Carlos “Pato” de la Riva";
         coachInfo2.textContent = "";
-        whatsappIconInfo.style.display = "block";
+        whatsappIconInfo.style.display = "none";
         whatsappIcon2.style.display = "none";
         whatsappIconInfo.setAttribute(
           "href",
@@ -343,7 +343,7 @@ function handleAlcaldias(e) {
         coachInfo.textContent = "Carlos “Pato” de la Riva";
         coachInfo2.textContent = "";
         coachInfo.style.display = "block";
-        whatsappIconInfo.style.display = "block";
+        whatsappIconInfo.style.display = "none";
         whatsappIcon2.style.display = "none";
         whatsappIconInfo.setAttribute(
           "href",
@@ -600,7 +600,7 @@ function handleAlcaldiaSelection() {
       coachInfo.textContent = 'Carlos "Pato" de la Riva - Mixto y Varonil';
       coachInfo2.textContent = "Luis de la Riva - Femenil";
       whatsappIcon2.style.display = "block";
-      whatsappIconInfo.style.display = "block";
+      whatsappIconInfo.style.display = "none";
       whatsappIconInfo.setAttribute(
         "href",
         "https://wa.me/525534449982?text=¡Hola!%20Me%20gustaría%20más%20información%20sobre%20los%20entrenamientos%20en%20la%20alcaldía%20Cuauhtémoc"
@@ -649,7 +649,7 @@ function handleAlcaldiaSelection() {
       coachInfo.style.display = "block";
       coachInfo.textContent = "Carlos “Pato” de la Riva";
       coachInfo2.textContent = "";
-      whatsappIconInfo.style.display = "block";
+      whatsappIconInfo.style.display = "none";
       whatsappIcon2.style.display = "none";
       whatsappIconInfo.setAttribute(
         "href",
@@ -708,7 +708,7 @@ function handleAlcaldiaSelection() {
       coachInfo.textContent = "Carlos “Pato” de la Riva";
       coachInfo2.textContent = "";
       coachInfo.style.display = "block";
-      whatsappIconInfo.style.display = "block";
+      whatsappIconInfo.style.display = "none";
       whatsappIcon2.style.display = "none";
       whatsappIconInfo.setAttribute(
         "href",
