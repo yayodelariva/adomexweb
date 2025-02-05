@@ -1,7 +1,7 @@
 logoLobosPath = "../images/equiposlogos/equiposEstatales/Lobos.png";
 logoAguilasPath = "../images/equiposlogos/equiposEstatales/Aguilas.png";
 guerrerosJaguarPath = "../images/equiposlogos/foamVaronil/GuerrerosJaguar.png";
-ahuizotlPath = "../images/equiposlogos/foamVaronil/Ahuizotl.png";
+ahuizotlPath = "../images/equiposlogos/foamVaronil/Ahuizotl.jpeg";
 vaquitasMarinasPath = "../images/equiposlogos/foamVaronil/VaquitasMarinas.jpeg";
 troopersFoamPath = "../images/equiposlogos/clothMixto/TroopersCloth.jpeg";
 hokusaiPath = "../images/equiposlogos/foamVaronil/Hokusai.png";
