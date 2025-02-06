@@ -14,6 +14,3 @@ deployment:
     - "/bin/cp privacy.html $DEPLOYPATH"
     - "/bin/cp index.html $DEPLOYPATH"
     - "/bin/cp style.css $DEPLOYPATH"
-
-
-/home1/bgyakwmy/public_html/website_87981b1d/
